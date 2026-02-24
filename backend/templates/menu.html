@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ATM Menu</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Welcome, {{ username }}</h2>
+
+    <form action="/withdraw" method="GET">
+        <button type="submit">Withdraw</button>
+    </form>
+
+    <form action="/deposit" method="GET">
+        <button type="submit">Deposit</button>
+    </form>
+
+    <form action="/balance" method="GET">
+        <button type="submit">Balance Enquiry</button>
+    </form>
+</div>
+
+</body>
+</html>

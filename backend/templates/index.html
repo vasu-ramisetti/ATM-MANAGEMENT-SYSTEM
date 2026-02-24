@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ATM Login</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>ATM Login</h2>
+
+    <form action="/login" method="POST">
+        <input type="text" name="username" placeholder="Enter Username">
+        <input type="password" name="password" placeholder="Enter Password">
+        <button type="submit">Login</button>
+    </form>
+
+    <p style="color:red">{{ message }}</p>
+</div>
+
+</body>
+</html>

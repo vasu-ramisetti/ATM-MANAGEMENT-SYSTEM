@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Withdraw Result</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>{{ message }}</h2>
+
+    {% if remaining_balance is not none %}
+        <p>Remaining Balance: ₹{{ remaining_balance }}</p>
+    {% endif %}
+
+    <form action="/menu" method="GET">
+        <button type="submit">Back to Menu</button>
+    </form>
+</div>
+
+</body>
+</html>

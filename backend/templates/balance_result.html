@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Balance</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Your Current Balance</h2>
+
+    {% if balance is not none %}
+        <p>Balance: ₹{{ balance }}</p>
+    {% else %}
+        <p style="color:red">{{ message }}</p>
+    {% endif %}
+
+    <form action="/menu" method="GET">
+        <button type="submit">Back to Menu</button>
+    </form>
+</div>
+
+</body>
+</html>

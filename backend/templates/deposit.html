@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Deposit Money</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+<h2>Deposit Money</h2>
+<form action="http://127.0.0.1:8000/deposit" method="POST">
+    <input type="text" name="username" placeholder="Username">
+    <select name="account_type">
+        <option>Savings Account</option>
+        <option>Current Account</option>
+    </select>
+    <input type="number" name="amount" placeholder="Enter amount">
+    <button>Deposit</button>
+</form>
+</div>
+</body>
+</html>
